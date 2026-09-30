@@ -1,0 +1,37 @@
+INFINITY ESG — REDESIGN TOTAL v1 ("Do resíduo ao valor")
+============================================================
+Site reconstruído do zero (HTML + CSS + JS vanilla, sem build,
+sem Bootstrap, sem template). Imagens 100% reais do projeto.
+
+COMO RODAR
+- Duplo clique em index.html, ou:
+  python -m http.server 8001  (dentro desta pasta)
+  http://localhost:8001/index.html
+
+PÁGINAS
+- index.html (home completa: hero, problema, infinity, jornada,
+  serviços, frota, mapa, impacto, ESG, clientes, cases, blog, CTA)
+- sobre.html / solucoes.html / operacao.html / impacto.html
+- conteudo.html + conteudo/lona-big-bags.html + conteudo/descarte-correto.html
+- contato.html (formulário premium com estados idle/loading/success/error)
+- Estrutura pronta para /cases/[slug] (seção na home) e /conteudo/[slug]
+
+REGRAS RESPEITADAS
+- Único número publicado: 6.200+ t/ano (fonte: site original).
+  Nenhum CO2, cliente, % ou cidade inventados.
+- Unidades citadas: Luziânia-GO, Unaí-MG, Tangará-MT + DF.
+- Frota real: Truck, Roll-on Roll-off, Garra Sucateira,
+  Reboque Julieta, caçambas 5–39 m³.
+- Logos reais dos clientes; sem depoimento inventado
+  (bloco editorial marcado como referência do setor).
+- Cases como arquitetura (desafio/solução) com tag
+  "CASE COMPLETO EM BREVE", sem resultado fictício.
+- Form sem backend fictício: data-form-endpoint configurável
+  (ex. Formspree); sem endpoint, simula com aviso claro.
+
+SEO / A11Y / PERF
+- Title, description, canonical, OG, Twitter cards, JSON-LD
+  Organization, robots.txt, sitemap.xml, H1 único por página.
+- Skip link, foco visível, aria-labels, alts, reduced-motion,
+  navegação por teclado, menu com Escape.
+- Lazy loading, preload só do hero, 1 CSS + 1 JS, sem libs.
